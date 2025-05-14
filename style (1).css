@@ -1,0 +1,158 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?cs=srgb&dl=pexels-hngstrm-1939485.jpg&fm=jpg');  /* Menambahkan gambar background */
+  background-size: cover;  /* Gambar akan menutupi seluruh halaman */
+  background-position: center center;  /* Gambar diatur di tengah */
+  color: #333;
+  animation: gradientAnimation 15s ease infinite;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  width: 90%;
+  margin: 20px auto;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.7); /* Menambahkan transparansi pada background header */
+  color: #001f3f;
+  display: flex;
+  align-items: center;
+  padding: 0 2pc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Navigation Menu */
+.menu {
+  background-color: rgba(0, 31, 63, 0.8); /* Menambahkan transparansi pada menu */
+  height: 50px;
+  line-height: 50px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover {
+  background-color: #005f99;
+  color: #fff;
+}
+
+/* Main Content Area */
+.content {
+  width: 90%;
+  margin: auto;
+  min-height: 420px;
+  background: rgba(255, 255, 255, 0.8); /* Menambahkan transparansi pada konten */
+  color: #333;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Blog Section */
+.kiri {
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.border {
+  border: 1px solid #4887b9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+  background-color: #f8fcff;
+}
+
+.border:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(72, 135, 185, 0.3);
+}
+
+.btn {
+  background-color: #005f99;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #003f66;
+}
+
+/* Sidebar Section */
+.kanan {
+  width: 30%;
+  background: #f7f9fb;
+  padding: 20px;
+}
+
+.kanan h3 {
+  color: #003f66;
+}
+
+.undecor {
+  text-decoration: none;
+  color: #005f99;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.undecor:hover {
+  color: #003f66;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  width: 90%;
+  margin: 20px auto;
+  height: 40px;
+  line-height: 40px;
+  background: #001f3f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
